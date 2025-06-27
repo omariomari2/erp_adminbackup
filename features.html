@@ -32,163 +32,654 @@
         .animate-on-load {
             opacity: 0;
         }
-        .soft-bg {
-            background: linear-gradient(135deg, #f5f3ff 0%, #e0e7ff 100%);
-        }
     </style>
 </head>
-<body class="soft-bg min-h-screen">
+<body class="bg-white">
+    <!-- Spline 3D Background -->
+    <div class="fixed inset-0 w-full h-full z-0">
+        <iframe src='https://my.spline.design/iphone15procopy-pmwnMexXbAOzhjJgYVtuY6kv/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+
     <!-- Content Overlay -->
     <div class="relative z-10">
         <!-- Include Navigation -->
-        <div id="navbar-placeholder"></div>
-        <!-- Page Content -->
-        <div class="max-w-6xl mx-auto py-12 px-4 sm:px-8">
-            <h1 class="heading-font text-4xl sm:text-5xl text-neutral-800 mb-4 text-center animate-on-load fade-in-up">Features</h1>
-            <p class="text-neutral-600 text-center mb-12 animate-on-load fade-in-up" style="animation-delay:0.1s;">Discover what makes our ERP system the perfect partner for your business success.</p>
-            <!-- Features Sections -->
-            <div class="space-y-12">
-                <!-- Effortless Inventory Control -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium mb-2 inline-block">Inventory</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Effortless Inventory Control</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Real-Time Stock Tracking:</b> Instantly see what's in stock, what's running low, and what needs to be reordered—across all your warehouses and stores.</li>
-                            <li><b>Smart Alerts:</b> Receive automatic notifications for low stock, price changes, and important inventory events.</li>
-                            <li><b>Easy Product Management:</b> Add, update, and organize products with just a few clicks. Bulk editing tools included.</li>
-                            <li><b>Multi-Location Management:</b> Effortlessly transfer stock between locations and track inventory movements.</li>
-                            <li><b>Category Organization:</b> Create and manage product categories and subcategories for easier browsing and reporting.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg heading-font text-sm hover:bg-indigo-700 transition">Get Started</a>
+        <div class="relative z-10">
+            <!-- Include Navigation -->
+            <div id="navbar-placeholder"></div>
+    
+            <!-- Feature 1: Inventory Control Section -->
+            <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+                <div class="w-4/5 max-w-7xl bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                    <!-- Visualization Column -->
+                    <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                        <div id="particles-js"></div>
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                            <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">INVENTORY MANAGEMENT</span>
+                            <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Effortless<br class="hidden sm:block">Inventory<br class="hidden sm:block">Control</h1>
+                            <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Real-time stock tracking, smart alerts, and multi-location management to keep your inventory perfectly organized.</p>
+                            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-neutral-600 text-neutral-300 rounded-lg heading-font text-sm hover:bg-neutral-800 transition animate-on-load fade-in-up delay-700">
+                                    Watch Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                            <div class="text-xs text-neutral-400 mb-1">Real-Time Tracking</div>
+                            <div class="heading-font text-lg sm:text-2xl text-neutral-200">24/7</div>
+                        </div>
                     </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/box.png" alt="Inventory" class="w-32 h-32">
+    
+                    <!-- Content Column -->
+                    <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                        <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                            <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 1</span>
+                            <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Effortless Inventory Control</h2>
+                            <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Instantly see what's in stock, what's running low, and what needs to be reordered—across all your warehouses and stores.</p>
+                        </div>
+    
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Real-Time Stock Tracking</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">No more guesswork or manual counts. You'll always have the right products available for your customers.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-5 5v-5zM4.5 19.5L9 15l4.5 4.5M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Smart Alerts</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Receive automatic notifications for low stock, price changes, and important inventory events.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Multi-Location Management</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Effortlessly transfer stock between locations and track inventory movements across all branches.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                            <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Perfect for growing businesses with multiple outlets</p>
+                            <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                <span class="text-xs sm:text-sm font-medium">Real-Time Updates</span>
+                                <span class="text-xs sm:text-sm font-medium">Smart Alerts</span>
+                                <span class="text-xs sm:text-sm font-medium">Bulk Editing</span>
+                                <span class="text-xs sm:text-sm font-medium">Category Management</span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <!-- Seamless Sales & POS Experience -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.1s;">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium mb-2 inline-block">Sales & POS</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Seamless Sales & POS Experience</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Fast Checkout:</b> Speed up every sale with barcode scanning, quick product search, and one-click payment processing.</li>
-                            <li><b>Flexible Returns & Exchanges:</b> Handle returns and refunds with ease, including partial returns and product exchanges.</li>
-                            <li><b>Customer Profiles:</b> Build lasting relationships by tracking customer purchase history, preferences, and loyalty points.</li>
-                            <li><b>Discounts & Promotions:</b> Easily apply discounts, run special offers, and manage loyalty programs.</li>
-                            <li><b>Multiple Payment Methods:</b> Accept cash, card, mobile payments, and more.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-pink-600 text-white rounded-lg heading-font text-sm hover:bg-pink-700 transition">Get Started</a>
+                </div>
+            </section>
+        </div>
+        <div class="relative z-10">
+            <!-- Include Navigation -->
+            <div id="navbar-placeholder"></div>
+    
+            <!-- Feature 2: Sales & POS Section -->
+            <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+                <div class="w-4/5 max-w-7xl bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                    <!-- Visualization Column -->
+                    <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                        <div id="particles-js"></div>
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                            <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">SALES & POS</span>
+                            <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Seamless<br class="hidden sm:block">Sales<br class="hidden sm:block">Experience</h1>
+                            <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Fast checkout, flexible returns, and customer profiles to boost sales and build lasting relationships.</p>
+                            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-neutral-600 text-neutral-300 rounded-lg heading-font text-sm hover:bg-neutral-800 transition animate-on-load fade-in-up delay-700">
+                                    Watch Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                            <div class="text-xs text-neutral-400 mb-1">Fast Checkout</div>
+                            <div class="heading-font text-lg sm:text-2xl text-neutral-200">30s</div>
+                        </div>
                     </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/pos-terminal.png" alt="POS" class="w-32 h-32">
+    
+                    <!-- Content Column -->
+                    <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                        <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                            <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 2</span>
+                            <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Seamless Sales & POS Experience</h2>
+                            <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Speed up every sale with barcode scanning, quick product search, and one-click payment processing.</p>
+                        </div>
+    
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Fast Checkout</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Your staff can serve more customers in less time, even during peak hours with streamlined processes.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Flexible Returns & Exchanges</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Handle returns and refunds with ease, including partial returns and product exchanges.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Customer Profiles</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Build lasting relationships by tracking customer purchase history, preferences, and loyalty points.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                            <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Multiple payment methods and loyalty programs</p>
+                            <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                <span class="text-xs sm:text-sm font-medium">Cash</span>
+                                <span class="text-xs sm:text-sm font-medium">Card</span>
+                                <span class="text-xs sm:text-sm font-medium">Mobile Pay</span>
+                                <span class="text-xs sm:text-sm font-medium">Loyalty Points</span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <!-- Empowered Employees -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.2s;">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium mb-2 inline-block">Employees</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Empowered Employees</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Simple Time Tracking:</b> Employees can clock in and out with a tap, including GPS-based attendance for field teams.</li>
-                            <li><b>Leave & Attendance Management:</b> Employees can request leave, and managers can approve or decline requests with a click.</li>
-                            <li><b>Performance Insights:</b> Managers can monitor staff performance, sales achievements, and attendance trends.</li>
-                            <li><b>Role-Based Access:</b> Each employee sees only the features and data relevant to their job.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-green-600 text-white rounded-lg heading-font text-sm hover:bg-green-700 transition">Get Started</a>
+                </div>
+            </section>
+        </div>
+        <div class="relative z-10">
+            <!-- Include Navigation -->
+            <div id="navbar-placeholder"></div>
+    
+            <!-- Feature 3: Employee Management Section -->
+            <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+                <div class="w-4/5 max-w-7xl bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                    <!-- Visualization Column -->
+                    <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                        <div id="particles-js"></div>
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                            <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">EMPLOYEE MANAGEMENT</span>
+                            <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Empowered<br class="hidden sm:block">Employees</h1>
+                            <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Simple time tracking, leave management, and performance insights to boost productivity and engagement.</p>
+                            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-neutral-600 text-neutral-300 rounded-lg heading-font text-sm hover:bg-neutral-800 transition animate-on-load fade-in-up delay-700">
+                                    Watch Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                            <div class="text-xs text-neutral-400 mb-1">GPS Tracking</div>
+                            <div class="heading-font text-lg sm:text-2xl text-neutral-200">✓</div>
+                        </div>
                     </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/conference-call.png" alt="Employees" class="w-32 h-32">
+    
+                    <!-- Content Column -->
+                    <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                        <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                            <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 3</span>
+                            <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Empowered Employees</h2>
+                            <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Employees can clock in and out with a tap, including GPS-based attendance for field teams or remote workers.</p>
+                        </div>
+    
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Simple Time Tracking</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Managers can view attendance records in real time with GPS-based attendance for field teams.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Leave & Attendance Management</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Employees can request leave, and managers can approve or decline requests with a click.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Performance Insights</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Monitor staff performance, sales achievements, and attendance trends with easy-to-read dashboards.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                            <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Role-based access keeps sensitive information secure</p>
+                            <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                <span class="text-xs sm:text-sm font-medium">Time Tracking</span>
+                                <span class="text-xs sm:text-sm font-medium">Leave Management</span>
+                                <span class="text-xs sm:text-sm font-medium">Performance</span>
+                                <span class="text-xs sm:text-sm font-medium">Role Access</span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <!-- Powerful Reporting & Insights -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.3s;">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-medium mb-2 inline-block">Reporting</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Powerful Reporting & Insights</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Instant Reports:</b> Generate detailed sales, inventory, and employee reports in seconds.</li>
-                            <li><b>Visual Dashboards:</b> See your business at a glance with interactive charts, graphs, and KPIs.</li>
-                            <li><b>Smart Analytics:</b> Uncover hidden trends, forecast demand, and identify your best-selling products.</li>
-                            <li><b>Export & Share:</b> Download reports in PDF, Excel, or CSV format and share them with your team.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-yellow-500 text-white rounded-lg heading-font text-sm hover:bg-yellow-600 transition">Get Started</a>
+                </div>
+            </section>
+        </div>
+        <div class="relative z-10">
+            <!-- Include Navigation -->
+            <div id="navbar-placeholder"></div>
+    
+            <!-- Feature 4: Two-Column Grid Section -->
+            <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+                <div class="w-4/5 max-w-7xl space-y-8">
+                    <!-- First Row: Reporting & Insights -->
+                    <div class="bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                        <!-- Visualization Column -->
+                        <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                            <div id="particles-js"></div>
+                            <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                                <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">REPORTING & ANALYTICS</span>
+                                <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Powerful<br class="hidden sm:block">Reporting<br class="hidden sm:block">& Insights</h1>
+                                <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Generate detailed reports in seconds with interactive dashboards and smart analytics.</p>
+                                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                    <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                        Learn More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                                <div class="text-xs text-neutral-400 mb-1">Instant Reports</div>
+                                <div class="heading-font text-lg sm:text-2xl text-neutral-200">PDF/Excel</div>
+                            </div>
+                        </div>
+        
+                        <!-- Content Column -->
+                        <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                            <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                                <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 4A</span>
+                                <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Powerful Reporting & Insights</h2>
+                                <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Generate detailed sales, inventory, and employee reports in seconds—no spreadsheets or manual calculations required.</p>
+                            </div>
+        
+                            <div class="space-y-3 sm:space-y-4">
+                                <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                    <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Instant Reports</h3>
+                                        <p class="text-neutral-600 text-xs sm:text-sm">Filter by date, location, product, or employee for deep insights into your business performance.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                    <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Visual Dashboards</h3>
+                                        <p class="text-neutral-600 text-xs sm:text-sm">See your business at a glance with interactive charts, graphs, and key performance indicators.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                    <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Smart Analytics</h3>
+                                        <p class="text-neutral-600 text-xs sm:text-sm">Uncover hidden trends, forecast demand, and identify your best-selling products or most valuable customers.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                                <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Export reports in PDF, Excel, or CSV format</p>
+                                <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                    <span class="text-xs sm:text-sm font-medium">Sales Reports</span>
+                                    <span class="text-xs sm:text-sm font-medium">Inventory Reports</span>
+                                    <span class="text-xs sm:text-sm font-medium">Employee Reports</span>
+                                    <span class="text-xs sm:text-sm font-medium">Analytics</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/combo-chart.png" alt="Reporting" class="w-32 h-32">
+
+                    <!-- Second Row: Purchases & Suppliers -->
+                    <div class="bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-300">
+                        <!-- Content Column -->
+                        <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                            <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                                <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 4B</span>
+                                <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Hassle-Free Purchases & Suppliers</h2>
+                                <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Keep all your supplier information organized and create, approve, and track purchase orders with minimal effort.</p>
+                            </div>
+        
+                            <div class="space-y-3 sm:space-y-4">
+                                <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                    <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Easy Supplier Management</h3>
+                                        <p class="text-neutral-600 text-xs sm:text-sm">Track contact details, order history, and performance ratings for all your suppliers.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                    <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Streamlined Purchasing</h3>
+                                        <p class="text-neutral-600 text-xs sm:text-sm">Create, approve, and track purchase orders and receipts with minimal effort.</p>
+                                    </div>
+                                </div>
+        
+                                <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                    <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Cost Control</h3>
+                                        <p class="text-neutral-600 text-xs sm:text-sm">Monitor spending, compare supplier prices, and analyze purchase trends to maximize your bottom line.</p>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                                <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Automated workflows for approval processes</p>
+                                <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                    <span class="text-xs sm:text-sm font-medium">Supplier Management</span>
+                                    <span class="text-xs sm:text-sm font-medium">Purchase Orders</span>
+                                    <span class="text-xs sm:text-sm font-medium">Cost Analysis</span>
+                                    <span class="text-xs sm:text-sm font-medium">Automation</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Visualization Column -->
+                        <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                            <div id="particles-js"></div>
+                            <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                                <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">PURCHASING & SUPPLIERS</span>
+                                <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Hassle-Free<br class="hidden sm:block">Purchases</h1>
+                                <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Easy supplier management and streamlined purchasing to keep your business running smoothly.</p>
+                                <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                    <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                        Learn More
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                                <div class="text-xs text-neutral-400 mb-1">Automated</div>
+                                <div class="heading-font text-lg sm:text-2xl text-neutral-200">✓</div>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <!-- Hassle-Free Purchases & Suppliers -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.4s;">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mb-2 inline-block">Purchases & Suppliers</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Hassle-Free Purchases & Suppliers</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Easy Supplier Management:</b> Keep all your supplier information organized and accessible.</li>
-                            <li><b>Streamlined Purchasing:</b> Create, approve, and track purchase orders and receipts with minimal effort.</li>
-                            <li><b>Cost Control:</b> Monitor spending, compare supplier prices, and analyze purchase trends.</li>
-                            <li><b>Automated Workflows:</b> Set up approval processes for large purchases or special orders.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg heading-font text-sm hover:bg-blue-700 transition">Get Started</a>
+                </div>
+            </section>
+        </div>
+        <div class="relative z-10">
+            <!-- Include Navigation -->
+            <div id="navbar-placeholder"></div>
+    
+            <!-- Feature 5: User-Friendly Experience Section -->
+            <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+                <div class="w-4/5 max-w-7xl bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                    <!-- Visualization Column -->
+                    <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                        <div id="particles-js"></div>
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                            <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">USER EXPERIENCE</span>
+                            <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">User-Friendly<br class="hidden sm:block">Experience</h1>
+                            <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Enjoy a clean, modern interface that's easy for everyone to use—no training required.</p>
+                            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-neutral-600 text-neutral-300 rounded-lg heading-font text-sm hover:bg-neutral-800 transition animate-on-load fade-in-up delay-700">
+                                    Watch Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                            <div class="text-xs text-neutral-400 mb-1">Mobile-Ready</div>
+                            <div class="heading-font text-lg sm:text-2xl text-neutral-200">✓</div>
+                        </div>
                     </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/supplier.png" alt="Suppliers" class="w-32 h-32">
+    
+                    <!-- Content Column -->
+                    <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                        <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                            <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 5</span>
+                            <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">User-Friendly Experience</h2>
+                            <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Enjoy a clean, modern interface that's easy for everyone to use—no training required.</p>
+                        </div>
+    
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Intuitive Design</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">New staff can get up to speed quickly, reducing onboarding time with our clean interface.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Mobile-Ready</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Access your ERP system from any device, anywhere, anytime. Manage your business on the go.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Personalized Dashboards</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Each user sees only what matters to them, making work faster and simpler with customizable widgets.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                            <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Built-in tours and help sections guide new users</p>
+                            <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                <span class="text-xs sm:text-sm font-medium">Intuitive Design</span>
+                                <span class="text-xs sm:text-sm font-medium">Mobile Access</span>
+                                <span class="text-xs sm:text-sm font-medium">Custom Dashboards</span>
+                                <span class="text-xs sm:text-sm font-medium">Guided Tours</span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <!-- User-Friendly Experience -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.5s;">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium mb-2 inline-block">User Experience</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">User-Friendly Experience</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Intuitive Design:</b> Enjoy a clean, modern interface that's easy for everyone to use.</li>
-                            <li><b>Mobile-Ready:</b> Access your ERP system from any device, anywhere, anytime.</li>
-                            <li><b>Personalized Dashboards:</b> Each user sees only what matters to them, making work faster and simpler.</li>
-                            <li><b>Guided Tours & Help:</b> Built-in tours and help sections guide new users through the system.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg heading-font text-sm hover:bg-purple-700 transition">Get Started</a>
+                </div>
+            </section>
+        </div>
+        <div class="relative z-10">
+            <!-- Include Navigation -->
+            <div id="navbar-placeholder"></div>
+    
+            <!-- Feature 6: Secure & Reliable Section -->
+            <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+                <div class="w-4/5 max-w-7xl bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                    <!-- Visualization Column -->
+                    <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                        <div id="particles-js"></div>
+                        <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                            <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">SECURITY & RELIABILITY</span>
+                            <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Secure &<br class="hidden sm:block">Reliable</h1>
+                            <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Your business data is safe, secure, and always backed up with enterprise-grade protection.</p>
+                            <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                    Learn More
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                    </svg>
+                                </button>
+                                <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-neutral-600 text-neutral-300 rounded-lg heading-font text-sm hover:bg-neutral-800 transition animate-on-load fade-in-up delay-700">
+                                    Watch Demo
+                                </button>
+                            </div>
+                        </div>
+                        <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                            <div class="text-xs text-neutral-400 mb-1">Enterprise Security</div>
+                            <div class="heading-font text-lg sm:text-2xl text-neutral-200">99.9%</div>
+                        </div>
                     </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/touchscreen-smartphone.png" alt="User Experience" class="w-32 h-32">
+    
+                    <!-- Content Column -->
+                    <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                        <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                            <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">FEATURE 6</span>
+                            <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Secure & Reliable</h2>
+                            <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Your business data is safe, secure, and always backed up. Regular backups and robust security measures protect against loss or breaches.</p>
+                        </div>
+    
+                        <div class="space-y-3 sm:space-y-4">
+                            <div class="flex items-start animate-on-load fade-in-left delay-400">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Role-Based Access</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Ensure everyone has the right access—nothing more, nothing less. Sensitive data is protected.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-500">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Data Protection</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Regular backups and robust security measures protect against loss or breaches.</p>
+                                </div>
+                            </div>
+    
+                            <div class="flex items-start animate-on-load fade-in-left delay-600">
+                                <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Audit Trails</h3>
+                                    <p class="text-neutral-600 text-xs sm:text-sm">Every important action is logged, so you can review changes, track user activity, and ensure compliance.</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                            <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Dependable support and ongoing updates keep your system running smoothly</p>
+                            <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                                <span class="text-xs sm:text-sm font-medium">Role Access</span>
+                                <span class="text-xs sm:text-sm font-medium">Data Protection</span>
+                                <span class="text-xs sm:text-sm font-medium">Audit Trails</span>
+                                <span class="text-xs sm:text-sm font-medium">24/7 Support</span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-                <!-- Secure & Reliable -->
-                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.6s;">
-                    <div class="flex-1">
-                        <span class="px-3 py-1 bg-neutral-200 text-neutral-700 rounded-full text-xs font-medium mb-2 inline-block">Security</span>
-                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Secure & Reliable</h2>
-                        <ul class="text-neutral-700 space-y-2 mb-4">
-                            <li><b>Role-Based Access:</b> Ensure everyone has the right access—nothing more, nothing less.</li>
-                            <li><b>Data Protection:</b> Your business data is safe, secure, and always backed up.</li>
-                            <li><b>Dependable Support:</b> Our team is here to help you every step of the way.</li>
-                            <li><b>Audit Trails:</b> Every important action is logged, so you can review changes and track user activity.</li>
-                        </ul>
-                        <a href="#" class="inline-block px-6 py-3 bg-neutral-800 text-white rounded-lg heading-font text-sm hover:bg-neutral-900 transition">Get Started</a>
-                    </div>
-                    <div class="flex-1 flex items-center justify-center">
-                        <img src="https://img.icons8.com/fluency/96/lock-2.png" alt="Security" class="w-32 h-32">
-                    </div>
-                </section>
-            </div>
-            <!-- Why Choose Our ERP -->
-            <div class="mt-16 text-center animate-on-load fade-in-up" style="animation-delay:0.7s;">
-                <h2 class="heading-font text-3xl text-neutral-800 mb-4">Why Choose Our ERP?</h2>
-                <ul class="text-neutral-700 space-y-2 max-w-2xl mx-auto mb-6">
-                    <li><b>All-in-One Solution:</b> Manage inventory, sales, employees, customers, and more from a single platform.</li>
-                    <li><b>Scalable for Growth:</b> Our ERP grows with your business. Add new stores, users, or features as you expand.</li>
-                    <li><b>Customizable:</b> Tailor the system to fit your unique needs and workflows.</li>
-                    <li><b>Seamless Integration:</b> Connect with your favorite tools and platforms for a truly unified business experience.</li>
-                </ul>
-                <a href="#" class="inline-block px-8 py-4 bg-indigo-700 text-white rounded-lg heading-font text-base hover:bg-indigo-800 transition">Experience the Difference</a>
-            </div>
+                </div>
+            </section>
         </div>
     </div>
+
     <script>
         // Load navbar component
         fetch('components/navbar.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('navbar-placeholder').innerHTML = data;
+                // Trigger animations
                 setTimeout(() => {
                     const animatedElements = document.querySelectorAll('.animate-on-load');
                     animatedElements.forEach(element => {
