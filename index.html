@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP System - Empower Your Business, Elevate Your Success</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .heading-font { font-family: 'Geist', system-ui, -apple-system, sans-serif; font-weight: 500; letter-spacing: -0.025em; }
+        #particles-js { position: absolute; width: 100%; height: 100%; top: 0; left: 0; pointer-events: none; overflow: hidden; }
+        .beautiful-shadow { box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12); }
+        html, body { overflow-x: hidden; box-sizing: border-box; }
+        *, *::before, *::after { box-sizing: inherit; }
+        
+        /* Fade-in animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        .fade-in-left {
+            animation: fadeInLeft 0.8s ease-out forwards;
+        }
+        
+        .fade-in-right {
+            animation: fadeInRight 0.8s ease-out forwards;
+        }
+        
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+        .delay-500 { animation-delay: 0.5s; }
+        .delay-600 { animation-delay: 0.6s; }
+        .delay-700 { animation-delay: 0.7s; }
+        .delay-800 { animation-delay: 0.8s; }
+        
+        /* Initially hide elements */
+        .animate-on-load {
+            opacity: 0;
+        }
+    </style>
+</head>
+<body class="bg-white">
+    <!-- Spline 3D Background -->
+    <div class="fixed inset-0 w-full h-full z-0">
+        <iframe src='https://my.spline.design/iphone15procopy-pmwnMexXbAOzhjJgYVtuY6kv/' frameborder='0' width='100%' height='100%'></iframe>
+    </div>
+
+    <!-- Content Overlay -->
+    <div class="relative z-10">
+        <!-- Include Navigation -->
+        <div id="navbar-placeholder"></div>
+
+        <!-- Hero Section -->
+        <section class="min-h-screen flex items-center justify-center p-2 sm:p-4 -mt-10 sm:-mt-16">
+            <div class="w-4/5 max-w-7xl bg-white backdrop-blur-lg rounded-2xl overflow-hidden beautiful-shadow border border-neutral-200 flex flex-col lg:flex-row animate-on-load fade-in-up delay-200">
+                <!-- Particles Visualization Column -->
+                <div class="lg:w-3/5 w-full h-72 sm:h-96 lg:h-auto relative bg-gradient-to-br from-neutral-900 to-neutral-800" id="particles-container">
+                    <div id="particles-js"></div>
+                    <div class="absolute inset-0 flex flex-col justify-center items-start p-4 sm:p-8 lg:p-12 z-10">
+                        <span class="px-4 py-2 bg-neutral-700/80 rounded-full text-xs sm:text-sm text-neutral-300 mb-2 sm:mb-4 animate-on-load fade-in-up delay-300">WELCOME TO THE FUTURE OF BUSINESS MANAGEMENT</span>
+                        <h1 class="heading-font text-2xl sm:text-4xl lg:text-6xl text-white mb-1 sm:mb-2 leading-tight animate-on-load fade-in-up delay-400">Streamline.<br class="hidden sm:block">Empower.<br class="hidden sm:block">Grow.</h1>
+                        <p class="text-neutral-300 text-base sm:text-lg mb-2 sm:mb-4 max-w-xs sm:max-w-md animate-on-load fade-in-up delay-500">Join numerous forward-thinking businesses transforming their operations with our all-in-one ERP platform.</p>
+                        <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 w-full sm:w-auto">
+                            <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white text-neutral-800 rounded-lg heading-font text-sm hover:bg-neutral-100 transition flex items-center justify-center animate-on-load fade-in-up delay-600">
+                                Get Started
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <button class="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border border-neutral-600 text-neutral-300 rounded-lg heading-font text-sm hover:bg-neutral-800 transition animate-on-load fade-in-up delay-700">
+                                Watch Demo
+                            </button>
+                        </div>
+                    </div>
+                    <div class="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-neutral-800/80 backdrop-blur-sm rounded-lg px-3 sm:px-4 py-2 sm:py-3 z-10 border border-neutral-700 animate-on-load fade-in-up delay-800">
+                        <div class="text-xs text-neutral-400 mb-1">Active Businesses</div>
+                        <div class="heading-font text-lg sm:text-2xl text-neutral-200">5</div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div class="lg:w-2/5 w-full p-4 sm:p-8 lg:p-12 bg-white flex flex-col justify-center">
+                    <div class="mb-4 sm:mb-6 animate-on-load fade-in-left delay-300">
+                        <span class="px-3 py-1 bg-neutral-100 rounded-full text-xs text-neutral-500 mb-1 sm:mb-2 inline-block">WHY CHOOSE US</span>
+                        <h2 class="heading-font text-xl sm:text-3xl text-neutral-800 mb-1 sm:mb-2">Built for Modern Businesses</h2>
+                        <p class="text-neutral-600 mb-2 sm:mb-4 text-sm sm:text-base">Experience the next generation of business management with powerful tools designed for efficiency, growth, and seamless collaboration across your entire organization.</p>
+                    </div>
+
+                    <div class="space-y-3 sm:space-y-4">
+                        <div class="flex items-start animate-on-load fade-in-left delay-400">
+                            <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Lightning Fast Operations</h3>
+                                <p class="text-neutral-600 text-xs sm:text-sm">Process sales, manage inventory, and track performance in real time. Our intuitive platform keeps your business moving at the speed of opportunity.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start animate-on-load fade-in-left delay-500">
+                            <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Secure & Reliable</h3>
+                                <p class="text-neutral-600 text-xs sm:text-sm">Your business data is protected with enterprise-grade security, regular backups, and robust privacy controls. Focus on growth—your information is always safe.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start animate-on-load fade-in-left delay-600">
+                            <div class="w-8 h-8 bg-neutral-700 rounded-lg flex items-center justify-center mr-3 sm:mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="heading-font text-base sm:text-lg text-neutral-800 mb-1">Scalable & Flexible</h3>
+                                <p class="text-neutral-600 text-xs sm:text-sm">Whether you're a single store or a multi-location enterprise, our ERP adapts to your needs. Add new users, locations, or features as you grow—no limits, no hassle.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 sm:mt-6 pt-3 sm:pt-4 border-t border-neutral-200 animate-on-load fade-in-left delay-700">
+                        <p class="text-xs text-neutral-500 mb-1 sm:mb-2">Trusted by leading retailers, wholesalers, and service providers worldwide</p>
+                        <div class="flex flex-wrap items-center gap-2 sm:gap-4 text-neutral-400">
+                            <span class="text-xs sm:text-sm font-medium">Retail</span>
+                            <span class="text-xs sm:text-sm font-medium">Wholesale</span>
+                            <span class="text-xs sm:text-sm font-medium">Manufacturing</span>
+                            <span class="text-xs sm:text-sm font-medium">Services</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script>
+        // Initialize particles
+        particlesJS('particles-js', {
+            particles: {
+                number: { value: 120, density: { enable: true, value_area: 800 } },
+                color: { value: "#d4d4d8" },
+                shape: { type: "circle" },
+                opacity: { value: 0.5, random: false },
+                size: { value: 3, random: true },
+                line_linked: { enable: true, distance: 150, color: "#a1a1aa", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 2, direction: "none", random: false, straight: false, out_mode: "out", bounce: false }
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { repulse: { distance: 100, duration: 0.4 }, push: { particles_nb: 4 } }
+            },
+            retina_detect: true
+        });
+
+        // Trigger animations when page loads
+        document.addEventListener('DOMContentLoaded', function() {
+            // Small delay to ensure smooth animation start
+            setTimeout(() => {
+                const animatedElements = document.querySelectorAll('.animate-on-load');
+                animatedElements.forEach(element => {
+                    element.style.opacity = '1';
+                });
+            }, 100);
+        });
+
+        // Load navbar component
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                // Trigger animations for navbar
+                setTimeout(() => {
+                    const navbarElements = document.querySelectorAll('.animate-on-load');
+                    navbarElements.forEach(element => {
+                        element.style.opacity = '1';
+                    });
+                }, 100);
+            });
+    </script>
+</body>
+</html>
+
+

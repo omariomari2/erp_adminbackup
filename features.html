@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features - ERP System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600&display=swap">
+    <style>
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .heading-font { font-family: 'Geist', system-ui, -apple-system, sans-serif; font-weight: 500; letter-spacing: -0.025em; }
+        html, body { overflow-x: hidden; box-sizing: border-box; }
+        *, *::before, *::after { box-sizing: inherit; }
+        
+        /* Fade-in animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .fade-in-up {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+        
+        /* Initially hide elements */
+        .animate-on-load {
+            opacity: 0;
+        }
+        .soft-bg {
+            background: linear-gradient(135deg, #f5f3ff 0%, #e0e7ff 100%);
+        }
+    </style>
+</head>
+<body class="soft-bg min-h-screen">
+    <!-- Content Overlay -->
+    <div class="relative z-10">
+        <!-- Include Navigation -->
+        <div id="navbar-placeholder"></div>
+        <!-- Page Content -->
+        <div class="max-w-6xl mx-auto py-12 px-4 sm:px-8">
+            <h1 class="heading-font text-4xl sm:text-5xl text-neutral-800 mb-4 text-center animate-on-load fade-in-up">Features</h1>
+            <p class="text-neutral-600 text-center mb-12 animate-on-load fade-in-up" style="animation-delay:0.1s;">Discover what makes our ERP system the perfect partner for your business success.</p>
+            <!-- Features Sections -->
+            <div class="space-y-12">
+                <!-- Effortless Inventory Control -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium mb-2 inline-block">Inventory</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Effortless Inventory Control</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Real-Time Stock Tracking:</b> Instantly see what's in stock, what's running low, and what needs to be reordered—across all your warehouses and stores.</li>
+                            <li><b>Smart Alerts:</b> Receive automatic notifications for low stock, price changes, and important inventory events.</li>
+                            <li><b>Easy Product Management:</b> Add, update, and organize products with just a few clicks. Bulk editing tools included.</li>
+                            <li><b>Multi-Location Management:</b> Effortlessly transfer stock between locations and track inventory movements.</li>
+                            <li><b>Category Organization:</b> Create and manage product categories and subcategories for easier browsing and reporting.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-indigo-600 text-white rounded-lg heading-font text-sm hover:bg-indigo-700 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/box.png" alt="Inventory" class="w-32 h-32">
+                    </div>
+                </section>
+                <!-- Seamless Sales & POS Experience -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.1s;">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-xs font-medium mb-2 inline-block">Sales & POS</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Seamless Sales & POS Experience</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Fast Checkout:</b> Speed up every sale with barcode scanning, quick product search, and one-click payment processing.</li>
+                            <li><b>Flexible Returns & Exchanges:</b> Handle returns and refunds with ease, including partial returns and product exchanges.</li>
+                            <li><b>Customer Profiles:</b> Build lasting relationships by tracking customer purchase history, preferences, and loyalty points.</li>
+                            <li><b>Discounts & Promotions:</b> Easily apply discounts, run special offers, and manage loyalty programs.</li>
+                            <li><b>Multiple Payment Methods:</b> Accept cash, card, mobile payments, and more.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-pink-600 text-white rounded-lg heading-font text-sm hover:bg-pink-700 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/pos-terminal.png" alt="POS" class="w-32 h-32">
+                    </div>
+                </section>
+                <!-- Empowered Employees -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.2s;">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium mb-2 inline-block">Employees</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Empowered Employees</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Simple Time Tracking:</b> Employees can clock in and out with a tap, including GPS-based attendance for field teams.</li>
+                            <li><b>Leave & Attendance Management:</b> Employees can request leave, and managers can approve or decline requests with a click.</li>
+                            <li><b>Performance Insights:</b> Managers can monitor staff performance, sales achievements, and attendance trends.</li>
+                            <li><b>Role-Based Access:</b> Each employee sees only the features and data relevant to their job.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-green-600 text-white rounded-lg heading-font text-sm hover:bg-green-700 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/conference-call.png" alt="Employees" class="w-32 h-32">
+                    </div>
+                </section>
+                <!-- Powerful Reporting & Insights -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.3s;">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-medium mb-2 inline-block">Reporting</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Powerful Reporting & Insights</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Instant Reports:</b> Generate detailed sales, inventory, and employee reports in seconds.</li>
+                            <li><b>Visual Dashboards:</b> See your business at a glance with interactive charts, graphs, and KPIs.</li>
+                            <li><b>Smart Analytics:</b> Uncover hidden trends, forecast demand, and identify your best-selling products.</li>
+                            <li><b>Export & Share:</b> Download reports in PDF, Excel, or CSV format and share them with your team.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-yellow-500 text-white rounded-lg heading-font text-sm hover:bg-yellow-600 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/combo-chart.png" alt="Reporting" class="w-32 h-32">
+                    </div>
+                </section>
+                <!-- Hassle-Free Purchases & Suppliers -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.4s;">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium mb-2 inline-block">Purchases & Suppliers</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Hassle-Free Purchases & Suppliers</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Easy Supplier Management:</b> Keep all your supplier information organized and accessible.</li>
+                            <li><b>Streamlined Purchasing:</b> Create, approve, and track purchase orders and receipts with minimal effort.</li>
+                            <li><b>Cost Control:</b> Monitor spending, compare supplier prices, and analyze purchase trends.</li>
+                            <li><b>Automated Workflows:</b> Set up approval processes for large purchases or special orders.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg heading-font text-sm hover:bg-blue-700 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/supplier.png" alt="Suppliers" class="w-32 h-32">
+                    </div>
+                </section>
+                <!-- User-Friendly Experience -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.5s;">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium mb-2 inline-block">User Experience</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">User-Friendly Experience</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Intuitive Design:</b> Enjoy a clean, modern interface that's easy for everyone to use.</li>
+                            <li><b>Mobile-Ready:</b> Access your ERP system from any device, anywhere, anytime.</li>
+                            <li><b>Personalized Dashboards:</b> Each user sees only what matters to them, making work faster and simpler.</li>
+                            <li><b>Guided Tours & Help:</b> Built-in tours and help sections guide new users through the system.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-purple-600 text-white rounded-lg heading-font text-sm hover:bg-purple-700 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/touchscreen-smartphone.png" alt="User Experience" class="w-32 h-32">
+                    </div>
+                </section>
+                <!-- Secure & Reliable -->
+                <section class="bg-white/80 backdrop-blur-lg rounded-2xl shadow-lg border border-neutral-200 p-8 flex flex-col lg:flex-row gap-8 animate-on-load fade-in-up" style="animation-delay:0.6s;">
+                    <div class="flex-1">
+                        <span class="px-3 py-1 bg-neutral-200 text-neutral-700 rounded-full text-xs font-medium mb-2 inline-block">Security</span>
+                        <h2 class="heading-font text-2xl text-neutral-800 mb-2">Secure & Reliable</h2>
+                        <ul class="text-neutral-700 space-y-2 mb-4">
+                            <li><b>Role-Based Access:</b> Ensure everyone has the right access—nothing more, nothing less.</li>
+                            <li><b>Data Protection:</b> Your business data is safe, secure, and always backed up.</li>
+                            <li><b>Dependable Support:</b> Our team is here to help you every step of the way.</li>
+                            <li><b>Audit Trails:</b> Every important action is logged, so you can review changes and track user activity.</li>
+                        </ul>
+                        <a href="#" class="inline-block px-6 py-3 bg-neutral-800 text-white rounded-lg heading-font text-sm hover:bg-neutral-900 transition">Get Started</a>
+                    </div>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="https://img.icons8.com/fluency/96/lock-2.png" alt="Security" class="w-32 h-32">
+                    </div>
+                </section>
+            </div>
+            <!-- Why Choose Our ERP -->
+            <div class="mt-16 text-center animate-on-load fade-in-up" style="animation-delay:0.7s;">
+                <h2 class="heading-font text-3xl text-neutral-800 mb-4">Why Choose Our ERP?</h2>
+                <ul class="text-neutral-700 space-y-2 max-w-2xl mx-auto mb-6">
+                    <li><b>All-in-One Solution:</b> Manage inventory, sales, employees, customers, and more from a single platform.</li>
+                    <li><b>Scalable for Growth:</b> Our ERP grows with your business. Add new stores, users, or features as you expand.</li>
+                    <li><b>Customizable:</b> Tailor the system to fit your unique needs and workflows.</li>
+                    <li><b>Seamless Integration:</b> Connect with your favorite tools and platforms for a truly unified business experience.</li>
+                </ul>
+                <a href="#" class="inline-block px-8 py-4 bg-indigo-700 text-white rounded-lg heading-font text-base hover:bg-indigo-800 transition">Experience the Difference</a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Load navbar component
+        fetch('components/navbar.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+                setTimeout(() => {
+                    const animatedElements = document.querySelectorAll('.animate-on-load');
+                    animatedElements.forEach(element => {
+                        element.style.opacity = '1';
+                    });
+                }, 100);
+            });
+    </script>
+</body>
+</html> 
